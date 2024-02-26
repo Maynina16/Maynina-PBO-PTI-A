@@ -7,11 +7,11 @@ public class Halo {
         int jumlahPengujian = 0;
         boolean kataDiketahui = false;
 
-        Scanner input = new Scanner(System.in);
+        Scanner tebak = new Scanner(System.in);
         
         while (!kataDiketahui) {
             System.out.print("Tebak Kata: ");
-            String tebakan = input.nextLine().toLowerCase();
+            String tebakan = tebak.nextLine().toLowerCase();
             jumlahPengujian++;
 
             if(tebakan.equals(kataAcak)) {
