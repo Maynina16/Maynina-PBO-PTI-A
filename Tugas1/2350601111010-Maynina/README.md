@@ -2,7 +2,7 @@
 
 ## 👤 Identitas Intern
 Nama : Maynina             
-NIM  : 2350601111010
+NIM  : 235150601111010
 
 ## 📤 Submission
 
