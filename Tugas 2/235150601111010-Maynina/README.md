@@ -14,7 +14,7 @@ NIM  : 235150601111010
 Nama Aplikasi Program : Perpustakaan
 Fitur Aplikasi Program :                   
 1. fitur A : Penggunaan struktur data Map
-2. fitur B : Kelas Buku, dengan atribut judul, penulis, dan kategori
+2. fitur B : Kelas Buku, menggunakan atribut judul, penulis, dan kategori
 3. fitur C : Inisialisasi kategori buku
 4. fitur D : Iterasi melalui kategori buku
 5. fitur D : Mencetak informasi buku
