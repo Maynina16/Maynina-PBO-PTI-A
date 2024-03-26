@@ -9,7 +9,6 @@ NIM  : 235150601111010
 Tema yang dipilih : Pekerjaan
 Class Diagram yang dibuat : 
 1. Class Diagram 1 : Petani 
-dst
 
 ## Implementasi CRUD
 
