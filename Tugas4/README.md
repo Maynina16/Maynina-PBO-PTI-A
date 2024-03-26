@@ -8,9 +8,7 @@ NIM  : 235150601111010
 
 Tema yang dipilih : Pekerjaan
 Class Diagram yang dibuat : 
-1. Class Diagram 1 : Petani (yang memenuhi requirement)
-2. Class Diagram 2 : Nelayan
-3. Class Diagram 3 : Polisi
+1. Class Diagram 1 : Petani 
 dst
 
 ## Implementasi CRUD
