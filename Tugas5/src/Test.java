@@ -7,22 +7,3 @@ public class Test {
             System.out.println("s1Mark is " + s1.getMark());
         }
     }
-
-    //no3
-     class Main { 
-        private String name;
-        private int mark;
-
-        public void setName(String n) {
-        name = n;
-    }
-        public String getName() {
-        return name;
-    }
-        public void setMark(int m) {
-        mark = m;
-    } 
-        public int getMark(){
-        return mark;
-    }
- }
