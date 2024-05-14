@@ -1,20 +1,52 @@
 public class PegawaiHarian extends Pegawai {
-    double upahPerJam;
-    int totalJamKerja;
+    private double upahPerJam;
+    private int totalJamKerja;
+    public int pendapatan;
 
-    public PegawaiHarian(String nama, String noKTP, double upahPerJam, int totalJamKerja) {
+    public PegawaiHarian(String nama, String noKTP, double upahPerJam, int totalJamKerja, int pendapatan) {
         super(nama, noKTP);
         this.upahPerJam = upahPerJam;
         this.totalJamKerja = totalJamKerja;
+        this.pendapatan = pendapatan;
     }
+
+    public double getUpahPerJam(){
+        return this.upahPerJam;
+    }
+    
+    public double getTotalJam(){
+        return this.totalJamKerja;
+    }
+    
+    public void setUpahPerJam(double upahPerJam){
+        this.upahPerJam = upahPerJam;
+    }
+    
+    public void setTotalJam(int totalJamKerja){
+        this.totalJamKerja = totalJamKerja;
+    }
+
+    public void setPendapatan(int pendapatan){
+        this.pendapatan = pendapatan;
+    }
+    
+    public double getPendapatan(){
+        return this.pendapatan;
+    }
+
     @Override
-    double hitungGaji() {
+    public double gaji() {
         if (totalJamKerja <= 40) {
             return upahPerJam * totalJamKerja;
         } else {
             int jamNormal = 40;
-            int jamLembur = totalJamKerja - jamNormal;
+            double jamLembur = totalJamKerja - jamNormal;
             return (upahPerJam * jamNormal) + (jamLembur * upahPerJam * 1.5);
         }
+    }
+
+    @Override
+    public String toString(){
+        return "Pegawai Harian  : " + super.getNama() + "\nNo. KTP         : " + super.getNoKTP() + "\nUpah/jam        : Rp " + getUpahPerJam() + "\nTotal jam kerja : " + ((double)getTotalJam()) + "\nPendapatan      : Rp " + ((int)gaji()) + "\n";
     }
 }
