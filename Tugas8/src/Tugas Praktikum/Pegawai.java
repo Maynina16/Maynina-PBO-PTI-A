@@ -1,12 +1,25 @@
 public abstract class Pegawai {
-    String nama;
-    String noKTP;
+    private String nama;
+    private String noKTP;
 
     public Pegawai(String nama, String noKTP) {
         this.nama = nama;
         this.noKTP = noKTP;
     }
+    public String getNama() {
+        return nama;
+    }
 
-    abstract double hitungGaji();    
+    public String getNoKTP() {
+        return noKTP;
+    }
+    
+    @Override
+    public String toString() {
+        return "Nama: " + getNama() + "\nNo. KTP: " + getNoKTP();
+    }
+    public double gaji() {
+        return 0;
+    }
 }
 
